@@ -9,14 +9,14 @@ var data;
 var map;
 var campus;
 var marker;
+var google;
 function initMap() {
-  // The location of Uluru
   campus = {lat: 33.7531, lng: -84.3853};
   
   map = new google.maps.Map(
       document.getElementById('GSU'), {zoom: 15, center: campus});
  
-  marker = new google.maps.Marker({position: campus, map: map});
+  // marker = new google.maps.Marker({position: campus, map: map});
 
 }
 $.getJSON("data.json", function(json) {
