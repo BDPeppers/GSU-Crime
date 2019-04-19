@@ -1,0 +1,17 @@
+@import '../abstract/abstract'
+    
+html, body
+    @include no
+    overflow-x: hidden
+
+header, footer
+    display: flex
+    @include flex(column)
+    align-items: center
+    background-color: $blue
+
+div.wrap
+    max-width: $laptop
+    @include flex(row)
+    flex-wrap: wrap
+    height: 100%

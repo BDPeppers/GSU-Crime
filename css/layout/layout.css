@@ -1,0 +1,142 @@
+header.site-header {
+  height: 20vh;
+}
+header.site-header h1.gsuCrimeAlerts {
+  font-weight: 700;
+  flex-basis: 100%;
+  text-align: center;
+  margin: auto;
+}
+header.site-header div.view {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+header.site-header div.view button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  width: 35%;
+  background-color: #FF0000;
+  border-radius: 45%;
+  border: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+footer div.wrap {
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+footer ul {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 50vh;
+}
+footer ul h1.footer-header {
+  text-align: center;
+  width: 100%;
+}
+footer ul li, footer ul p {
+  text-align: center;
+  width: 100%;
+}
+footer ul li.info-link {
+  padding: 2rem 0;
+}
+footer ul li.contact-link {
+  padding: 1rem 0;
+}
+footer ul li.contact-link span {
+  display: table;
+  width: 100%;
+}
+footer ul.footer-info {
+  align-items: flex-start;
+}
+footer ul.footer-info div {
+  padding-top: 8rem;
+}
+footer ul.footer-contact {
+  align-items: flex-end;
+}
+footer ul.footer-contact div.liveSafe {
+  padding: 1rem 0;
+}
+footer div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div img {
+  padding: 0.5rem;
+}
+footer div img.fire {
+  width: 65%;
+  height: 65%;
+}
+footer div img.liveSafe {
+  width: 100%;
+  min-height: 7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  footer div.wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  footer ul {
+    width: 70%;
+  }
+}
+div.map-container {
+  background-color: #d0d0d0;
+  width: 100%;
+}
+div.map-container div.map {
+  height: 80vh;
+  max-width: 1024px;
+  margin: auto;
+}
+div.map-container div.hide {
+  height: 0;
+  display: hidden;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header, footer {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0324a6;
+}
+
+div.wrap {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/*# sourceMappingURL=layout.css.map */

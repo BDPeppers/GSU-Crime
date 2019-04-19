@@ -1,0 +1,44 @@
+@import '../abstract/abstract'
+    
+html
+    font-size: 62.5%
+body, div, button 
+
+
+h1,h2,h3,h4,h5,h6,p,div,li,a
+    font-family: 'Lato', sans-serif
+    color: $white
+    font-weight: 400
+    text-decoration: none
+h1
+    font-size: 5vw
+li,p
+    font-size: 4vw
+
+
+//Header
+@media only screen and (min-width: $tablet)//max font size
+    h1.gsuCrimeAlerts, h1.footer-header
+        font-size: 4rem 
+    
+@media only screen and (max-width: $large-phone)//min font size
+    h1.gsuCrimeAlerts
+        font-size: 2rem 
+
+//Footer
+@media only screen and (max-width: $mobile-flip)//min font size
+    h1.footer-header
+        font-size: 5rem 
+    li, p
+        font-size: 2.5rem
+
+@media only screen and (min-width: $tablet)//max font size
+    li,p
+        font-size: 3rem 
+    h1.footer-header
+        font-size: 6rem
+
+
+
+    
+    

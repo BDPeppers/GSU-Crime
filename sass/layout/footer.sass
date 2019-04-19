@@ -1,0 +1,54 @@
+@import '../abstract/abstract'
+    
+footer
+    @include flex(row)
+    width: 100%
+    div.wrap
+        justify-content: space-between
+        padding-bottom: 2rem
+    ul
+        width: 40%
+        @include flex(column)
+        list-style: none
+        @include no
+        min-height: 50vh
+        h1.footer-header
+            text-align: center
+            width: 100%
+        li,p
+            text-align: center
+            width: 100%
+        li.info-link
+            padding: 2rem 0
+        li.contact-link
+            padding: 1rem 0
+            span
+                display: table
+                width: 100%
+    ul.footer-info
+        align-items: flex-start
+        div
+            padding-top: 8rem
+    ul.footer-contact
+        // max-height: 30vh
+        align-items: flex-end
+        div.liveSafe
+            padding: 1rem 0
+    div
+        width: 100%
+        @include flex(column)
+        align-items: center
+        img
+            padding: .5rem
+        img.fire
+            width: 65%
+            height: 65%
+        img.liveSafe
+            width: 100%
+            min-height: 7rem
+@media only screen and (max-width: $mobile-flip)
+    footer
+        div.wrap
+            @include flex(column-reverse)
+        ul
+            width: 70%

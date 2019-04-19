@@ -1,0 +1,31 @@
+header.site-header {
+  height: 20vh;
+}
+header.site-header h1.gsuCrimeAlerts {
+  font-weight: 700;
+  flex-basis: 100%;
+  text-align: center;
+  margin: auto;
+}
+header.site-header div.view {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+header.site-header div.view button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  width: 35%;
+  background-color: #FF0000;
+  border-radius: 45%;
+  border: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+/*# sourceMappingURL=header.css.map */
