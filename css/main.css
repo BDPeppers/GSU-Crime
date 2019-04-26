@@ -200,6 +200,7 @@ div.functions {
 div.functions div.wrap {
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 div.functions div.wrap button {
   height: 50%;

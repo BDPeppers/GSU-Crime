@@ -70,10 +70,10 @@ function alerts(crimeData){//add cime alerts to the map
         Info.length = 0;
       }
     }
-    map.addListener('click',function(event){
-      addMarker(event.latLng);
-    });
-    addMarker(latLng);
+    // map.addListener('click',function(event){
+    //   addMarker(event.latLng);
+    // });
+    // addMarker(latLng);
 
 
   }
