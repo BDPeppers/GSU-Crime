@@ -17,6 +17,36 @@ li, p {
   font-size: 4vw;
 }
 
+div#bodyContent {
+  color: black;
+}
+div#bodyContent h2, div#bodyContent p {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+div#bodyContent p {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+div#bodyContent div.data-row {
+  height: 5vh;
+}
+div#bodyContent div.data-row h2 {
+  display: flex;
+  align-items: center;
+}
+div#bodyContent div.data-row h2 p {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+h1#firstHeading {
+  color: #FF0000;
+}
+
 @media only screen and (min-width: 800px) {
   h1.gsuCrimeAlerts, h1.footer-header {
     font-size: 4rem;
