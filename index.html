@@ -25,15 +25,26 @@
 </head>
 
 <body>
-    <!-- api key= AIzaSyA_bKHm7mjXvzGYhDxaD76z_g81gEcECBQ -->
+    
+    <!-- init map + visualization -->
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_bKHm7mjXvzGYhDxaD76z_g81gEcECBQ&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_bKHm7mjXvzGYhDxaD76z_g81gEcECBQ&callback=initMap&libraries=visualization">
     </script>
+
+   
 
     <div class="map-container">
         <div class="map" id="GSU"></div>
     </div>
 
+    <!-- Map Function -->
+    <div class="functions">
+        <div class="wrap">
+                <button onclick="heat()">Heat Map</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="wrap">
             <!-- Information -->
@@ -45,7 +56,7 @@
                 <li class="info-link"><a href="https://safety.gsu.edu/category/crime-alerts/">Crime Alert Archive</a>
                 </li>
                 <!-- Recieve Emergency Information vis SMS (link) -->
-                <li class="info-link"><a href="https://www.getrave.com/login/gsu">Recieve Emergency Information via SMS</a></li>
+                <li class="info-link"><a href="https://www.getrave.com/login/gsu">Receive Emergency Information via SMS</a></li>
                 <!-- Daily Police Reports (link) -->
                 <li class="info-link"><a href="http://listserv.gsu.edu/cgi-bin/wa?A0=SAFETY-HEALTH">Daily Police
                         Reports</a>
@@ -54,7 +65,6 @@
                     <img class="fire" src="pics/fire.png">
                 </div>
             </ul>
-
             <!-- Contact -->
             <ul class="footer-contact">
                 <h1 class="footer-header">Contact</h1>

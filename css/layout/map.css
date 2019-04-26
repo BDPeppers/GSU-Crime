@@ -7,9 +7,22 @@ div.map-container div.map {
   max-width: 1024px;
   margin: auto;
 }
-div.map-container div.hide {
-  height: 0;
-  display: hidden;
+
+div.functions {
+  height: 20vh;
+  background: #0324a6;
+  box-sizing: border-box;
+  border-top: solid white 0.5rem;
+  border-bottom: solid white 0.5rem;
+}
+div.functions div.wrap {
+  justify-content: center;
+  align-items: center;
+}
+div.functions div.wrap button {
+  height: 50%;
+  border-radius: 20%;
+  border: 0;
 }
 
 /*# sourceMappingURL=map.css.map */
