@@ -47,11 +47,11 @@ function alerts(crimeData){//add cime alerts to the map
     '<h2>Suspect Description</h2> '+ data.features[i].properties.Suspects +
     '</div>'+
     '</div>';
-    var marker = new google.maps.Marker({//marker 
+    const marker = new google.maps.Marker({//marker 
       position: latLng,
       map: map
     });
-    var popup = new google.maps.InfoWindow({//popup box
+    const popup = new google.maps.InfoWindow({//popup box
       content: crime_info
     });
 
