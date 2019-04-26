@@ -26,7 +26,7 @@ function alerts(crimeData){//add cime alerts to the map
     var crime_info = '<div id="content">'+
     '<div id="siteNotice">'+
     '</div>'+
-    '<h1 id="firstHeading" class="firstHeading" style="text-align:center";>Crime Alert</h1>'+
+    // '<h1 id="firstHeading" class="firstHeading" style="text-align:center";>Crime Alert</h1>'+
     '<div id="bodyContent">'+ 
     '<h2>Crime Type: ' + data.features[i].properties.Crime + '</h2>' + 
     '<h2>Time: ' + data.features[i].properties.Time + '</h2>' + '<h2>Date: ' + data.features[i].properties.Date + '</h2>' + 
