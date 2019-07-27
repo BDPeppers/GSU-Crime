@@ -18,6 +18,15 @@ div.functions
         justify-content: center
         align-items: center
         margin: auto
+        @include flex(row)
+        flex-wrap: wrap
+        p
+            flex-basis: 100%
+            padding: 0
+            margin: 0
+            text-align: center
+            font-size: 2rem
+            
         button
             height: 50%
             border-radius: 20%

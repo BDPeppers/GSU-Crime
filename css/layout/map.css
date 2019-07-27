@@ -19,6 +19,16 @@ div.functions div.wrap {
   justify-content: center;
   align-items: center;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.functions div.wrap p {
+  flex-basis: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
 }
 div.functions div.wrap button {
   height: 50%;

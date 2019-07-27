@@ -4,6 +4,7 @@ var map;//base map
 var campus = {lat: 33.7531, lng: -84.3853};//centering the map on the GSU campus
 var Info = [];//marker resetter
 var markarr = [];
+var crimeCount = 0;
 
 //heatmap
 var heatmap;
@@ -27,7 +28,6 @@ window.onload = function(){
 function initMap() {
   map = new google.maps.Map(
       document.getElementById('GSU'), {zoom: 15, center: campus});
-  
 }
 
 
@@ -74,10 +74,13 @@ function alerts(crimeData){//add cime alerts to the map
     //   addMarker(event.latLng);
     // });
     // addMarker(latLng);
-
-
+    crimeCount++;
   }
-  
+  crimeDisplay(crimeCount);
+}
+
+function crimeDisplay(crimeCount){
+  document.getElementById("crimeNum").innerHTML = crimeCount;
 }
 
 function addMarker(location) {
@@ -109,24 +112,25 @@ function getData(data){
   }
   return crime;
 }
-//Setting Heatmap
-function hotmap(){
-  heatPoints = getData(data);
-  heatmap = new google.maps.visualization.HeatmapLayer({
-    map: map,
-    data: heatPoints,
-    radius: 40
-  });
-}
-function heat(){
-  if(heatmap){
-    heatmap.setMap(heatmap.getMap() ? null : map);
-    // heatmap.data = null;
-  }else{
-    hotmap();
-    // alerts(null);
-  }
-}
+// //Setting Heatmap
+// function hotmap(){
+//   heatPoints = getData(data);
+//   heatmap = new google.maps.visualization.HeatmapLayer({
+//     map: map,
+//     data: heatPoints,
+//     radius: 40
+//   });
+// }
+
+// function heat(){
+//   if(heatmap){
+//     heatmap.setMap(heatmap.getMap() ? null : map);
+//     // heatmap.data = null;
+//   }else{
+//     hotmap();
+//     alerts(null);
+//   }
+// }
 
 
 
